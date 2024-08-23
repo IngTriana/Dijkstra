@@ -78,7 +78,7 @@ namespace Dijkstra
                 for(columna = 0; columna < cantNodos; columna++)
                 {
                     // Buscamos a quien se dirige
-                    if(miGrafo.ObtenAdyacencia(actual, columna) != 0)
+                    if(miGrafo.ObtenAdyacencia(actual, columna) > 0)
                     { 
                         // Calculamos la distancia
                         distancia = miGrafo.ObtenAdyacencia(actual,columna) + tabla[actual,1];
